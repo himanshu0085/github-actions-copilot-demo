@@ -17,7 +17,8 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install   # ❌ ERROR: wrong working directory
+        run: npm install
+        working-directory: app
 
       - name: Build
         run: npm run build
